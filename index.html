@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ebb188da7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <body onload="loadApp()">
+        <header>
+            <div class="nav">
+                <h1>To do list</h1>
+            </div>
+        </header>
+
+        <section>
+            <div class="main">
+                <div class="main-pri">
+                    <div class="main-pri-title">
+                        <h1>Agregar nota</h1>
+                    </div>
+                    <div class="main-pri-info">
+                        <form id="form" onsubmit="return false;">
+                            <input type="text" class="agregar_descripcion" placeholder="Título" id="title"/>
+                            <input type="date" class="agregar_descripcion2" id="date">
+                            <textarea class="agregar_valor" name="" id="description" placeholder="Descripción" cols="30" rows="4"></textarea>
+                            <button class="agregar_btn" onclick="addDato()">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="main-sec">
+                    <div class="main_sec_titulo">
+                        <h2 >Mis Notas</h2>
+                    </div>
+                    <div id="main_sec_info">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+        <script src="js/Dato.js"></script>
+        <script src="js/Ingreso.js"></script>    
+        <script src="./js/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
